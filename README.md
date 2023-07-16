@@ -1,14 +1,17 @@
 # JS EDU
+Учебная задача по JS
 
-## History
-The Rolling Scopes School is widely known for its difficult curriculum that takes a lot of time. It usually takes 800 hours to master the JavaScript language, its ecosystem and related tools. About 500 hours are required to learn pretty basic programming (loops, if-else operators (flow of control), basic data structures and algorithms) from scratch.
+*(В рамках курса Frontend-Developer в RollingScopesSchool)*
 
-## Task
-Your task is to implement the `getTimeForEducation` function that calculates how many weeks the *education process* would take under given conditions. The function should take the current student priority as string and config of how quickly student can study. The function should return the amount of weeks required to complete the course.
+## История
+Школа Rolling Scopes широко известна своей сложной учебной программой, которая занимает много времени. Обычно требуется 800 часов, чтобы освоить язык JavaScript, его экосистему и сопутствующие инструменты. Около 500 часов требуется, чтобы изучить основы программирования (циклы, операторы if-else (поток управления), основные структуры данных и алгоритмы) с нуля.
 
-For example:
+## Здадача
+Реализовать функцию `getTimeForEducation`, которая вычисляет, сколько недель займет *процесс обучения* при заданных условиях. Функция должна принимать текущий приоритет ученика в виде строки и конфигурации того, как быстро ученик может учиться. Функция должна возвращать количество недель, необходимое для прохождения курса.
+
+Пример:
 ```js
-   // education time config
+   // Распределние учебного времени
    const speedConfig = {
     family: 4,
     friends: 10,
@@ -22,24 +25,12 @@ For example:
   console.log(weeks); //
 ```
 
-Write your code in `src/index.js.
-*All test cases are designed as “error-free”, so don't worry about handling any errors.*
+## Как тестировать
 
-## Prepare and test
-1. Install [Node.js](https://nodejs.org/en/download/)   
-2. Fork this repository: https://github.com/davojta/js-edu
-3. Clone your newly created repo: https://github.com/<%your_github_username%>/js-edu/  
-4. Go to folder `js-edu`  
-5. To install all dependencies use [`npm install`](https://docs.npmjs.com/cli/install)  
-6. Run `npm test` in the command line  
-7. You will see the number of passing and failing tests you 100% of passing tests is equal to 100p in score  
+- Запустить `npm install` в терминале
+- Запустить `npm test` в терминале
+- Вы сможете увидеть количество пройденных и провалившихся тестов
 
-## Submit to [rs app](https://app.rs.school)
-1. Open [rs app](https://app.rs.school) and login
-2. Go to [submit task page](https://app.rs.school/course/submit-task?course=rs-2019-q3)
-3. Select your task (js-edu)
-4. Press the submit button and enjoy
-
-### Notes
-1. We recommend you to use nodejs of version 10 or lower. If you using any of features that does not supported by node v10, score won't be submitted.
-2. Please be sure that each of your test in limit of 30sec.
+### Заметки
+1. Рекомендуется использовать nodejs версии 10 или ниже.
+2. Рекомендуется реализовать функцию так, чтоб каждый из тестов не превышал 30 секунд.
